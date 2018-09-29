@@ -1,11 +1,11 @@
 public class MyClass {
     private String myString;
 
-    protected void setMyStringProtected(String myString) {
+    protected void protectedSetMyString(String myString) {
         this.myString = myString;
     }
 
-    private void setMyStringPrivate(String myString) {
+    private void privateSetMyString(String myString) {
         this.myString = myString;
     }
 

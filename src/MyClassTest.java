@@ -8,12 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class MyClassTest {
 
     private final String stringA = "A";
-    private final String methodName = "setMyStringPrivate";
+    private final String methodName = "privateSetMyString";
 
     @Test
     public void setStringToAUsingProtected() {
         MyClass myClass = new MyClass();
-        myClass.setMyStringProtected(stringA);
+        myClass.protectedSetMyString(stringA);
         assertEquals(stringA, myClass.getMyString());
     }
 

@@ -1,5 +1,14 @@
 public class MyClass {
     private String myString;
+    private int myInt;
+
+    public String getMyString() {
+        return myString;
+    }
+
+    public int getMyInt() {
+        return myInt;
+    }
 
     protected void protectedSetMyString(String myString) {
         this.myString = myString;
@@ -9,7 +18,13 @@ public class MyClass {
         this.myString = myString;
     }
 
-    public String getMyString() {
-        return myString;
+    private boolean privateSetMyStringReturningBool(String myString) {
+        this.myString = myString;
+        return true;
     }
+
+    private void privateSetMyInt(int myInt) {
+        this.myInt = myInt;
+    }
+
 }
